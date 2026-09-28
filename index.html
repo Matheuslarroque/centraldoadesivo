@@ -19,7 +19,7 @@
     <div class="container nav-row">
       <a class="brand" href="#inicio" aria-label="Central do Adesivo, início"><img src="assets/logo-central-do-adesivo.svg" alt="Central do Adesivo"></a>
       <nav id="menu" aria-label="Menu principal">
-        <a href="#produtos">Produtos</a><a href="#diferenciais">Por que escolher</a><a href="#como-funciona">Como funciona</a><a href="#calculadora">Calculadora</a>
+        <a href="#produtos">Produtos</a><a href="#diferenciais">Por que escolher</a><a href="#como-funciona">Como funciona</a><a href="#calculadora">Calculadora</a><a href="#sobre">Sobre</a>
       </nav>
       <a class="nav-cta" href="#calculadora">Simular orçamento <span aria-hidden="true">↗</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
@@ -34,7 +34,10 @@
         <h1>Todo produto bom <span>merece um rótulo à altura.</span></h1>
         <p class="hero-lead">Adesivo não é detalhe — é o que faz alguém parar o carrinho, olhar de novo e decidir levar. A gente imprime, recorta e lamina do seu jeito. Você só escolhe o tamanho e a quantidade.</p>
         <a class="button button-yellow" href="#calculadora">Simular meu adesivo agora <span aria-hidden="true">↗</span></a>
-        <div class="hero-mark" aria-hidden="true"><img src="assets/logo-central-do-adesivo.svg" alt=""></div>
+        <div class="hero-orb" aria-hidden="true">
+          <span class="orb-ring ring-1"></span><span class="orb-ring ring-2"></span><span class="orb-ring ring-3"></span>
+          <canvas id="orbCanvas" width="520" height="520"></canvas>
+        </div>
       </div>
       <div class="hero-bottom container"><span>FEITO PARA SUA MARCA</span><span>ROLE PARA EXPLORAR ↓</span></div>
     </section>
@@ -60,7 +63,7 @@
     </section>
 
     <section class="feature section-pad">
-      <div class="container feature-grid"><div class="feature-visual reveal"><div class="visual-label">CENTRAL DO ADESIVO <span>✳</span></div><img src="assets/logo-central-do-adesivo.svg" alt="Logo Central do Adesivo: cola com a gente!"><div class="visual-caption">SUA IDEIA GANHA FORMA AQUI.</div></div><div class="feature-content reveal"><p class="kicker">SEU PROJETO, DO SEU JEITO</p><h2>Não existe uma marca igual à sua. <span>Seu adesivo também não precisa ser.</span></h2><p>Escolhe o tamanho, decide a quantidade e conta pra gente como imagina o resultado — o resto é problema nosso: cor, corte e acabamento pensados pra sua aplicação específica.</p><a class="button button-outline" href="#calculadora">Começar minha simulação <span aria-hidden="true">↗</span></a></div></div>
+      <div class="container feature-grid"><div class="feature-visual reveal"><div class="visual-label">CENTRAL DO ADESIVO <span>✳</span></div><canvas id="glueCanvas" width="420" height="440" aria-hidden="true"></canvas><div class="visual-caption">UMA GOTA DE IDEIA, PRONTA PRA COLAR.</div></div><div class="feature-content reveal"><p class="kicker">SEU PROJETO, DO SEU JEITO</p><h2>Não existe uma marca igual à sua. <span>Seu adesivo também não precisa ser.</span></h2><p>Escolhe o tamanho, decide a quantidade e conta pra gente como imagina o resultado — o resto é problema nosso: cor, corte e acabamento pensados pra sua aplicação específica.</p><a class="button button-outline" href="#calculadora">Começar minha simulação <span aria-hidden="true">↗</span></a></div></div>
     </section>
 
     <section class="calculator section-pad" id="calculadora">
@@ -77,6 +80,13 @@
     </section>
 
     <section class="process section-pad" id="como-funciona"><div class="container"><div class="section-head reveal"><div><p class="kicker">DO PRIMEIRO CONTATO À PRODUÇÃO</p><h2>Simples para você. <span>Caprichado em cada etapa.</span></h2></div></div><div class="process-grid"><article class="reveal"><span>01</span><h3>Escolha</h3><p>Usa a calculadora, decide o tamanho e a quantidade que fazem sentido pro seu projeto.</p></article><article class="reveal"><span>02</span><h3>Envie a arte</h3><p>Manda seu logotipo ou arquivo. Sem arte pronta? A gente te ajuda a resolver.</p></article><article class="reveal"><span>03</span><h3>Confira</h3><p>Antes de rodar a máquina, confirmamos cor, medida e acabamento com você — sem surpresa na entrega.</p></article><article class="reveal"><span>04</span><h3>Produção</h3><p>Seu adesivo é impresso, recortado e embalado, pronto pra colar.</p></article></div></div></section>
+
+    <section class="about section-pad" id="sobre">
+      <div class="container about-grid">
+        <div class="about-visual reveal"><img src="assets/logo-central-do-adesivo.svg" alt="Logo Central do Adesivo: cola com a gente!"></div>
+        <div class="about-copy reveal"><p class="kicker">SOBRE A CENTRAL DO ADESIVO</p><h2>Quem cola a sua marca <span>no dia a dia.</span></h2><p>Somos uma equipe que vive de detalhe: cor certa, corte preciso, acabamento que resiste ao tempo. Cada pedido sai daqui pronto pra fazer sua marca aparecer onde ela precisa aparecer — na embalagem, na vitrine ou na rua.</p></div>
+      </div>
+    </section>
 
     <section class="closing"><div class="container closing-inner reveal"><p class="kicker">COLA COM A GENTE!</p><h2>Pronto para fazer sua marca <span>aparecer?</span></h2><p>Faz a simulação agora, leva o número pronto e a gente cuida do resto — do arquivo até a entrega.</p><a class="button button-dark" href="#calculadora">Simular meu adesivo <span aria-hidden="true">↗</span></a></div></section>
   </main>
